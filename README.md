@@ -131,3 +131,20 @@ This Module is divided into two parts:
 # Initial Configuration
 
 
+
+      sudo apt-get remove --purge libreoffice*
+      sudo apt-get remove --purge thunderbird*
+      
+      
+# Create Swap      
+      
+      
+      udo fallocate -l 10.0G /swapfile1
+      sudo chmod 600 /swapfile1
+      sudo mkswap /swapfile1
+      sudo vim /etc/fstab
+      # make entry in fstab file
+      /swapfile1	swap	swap	defaults	0 0
+   
+
+# Cuda env in bashrc
