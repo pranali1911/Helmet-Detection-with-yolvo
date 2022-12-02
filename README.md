@@ -136,7 +136,7 @@ This Module is divided into two parts:
       sudo apt-get remove --purge thunderbird*
       
       
-# Create Swap      
+   # Create Swap      
       
       
       udo fallocate -l 10.0G /swapfile1
@@ -147,4 +147,4 @@ This Module is divided into two parts:
       /swapfile1	swap	swap	defaults	0 0
    
 
-# Cuda env in bashrc
+   # Cuda env in bashrc
