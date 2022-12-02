@@ -226,10 +226,67 @@ source '0' for webcam
        
 # Demo
 
+
+
+
+
      
-     
-     
-     https://user-images.githubusercontent.com/89011801/151379110-ad79d0af-1a59-4618-91a3-0c87456a2fa8.mp4
+  https://user-images.githubusercontent.com/89011801/151379110-ad79d0af-1a59-4618-91a3-0c87456a2fa8.mp4
+  
+  
+  
+  
+  
+  
+#  Advantages
+
+• Helmet detection system will be of great help in minimizing the injuries that occur due to an accident.
+
+• Helmet detection system shows whether the person in viewfinder of camera module is wearing a Helmet or not with good accuracy.
+
+• It can then convey it to authorities like traffic policeman or the data about the respective person and his vehicle can be stored, and then based on the info acquired can be notified on his mobile phone about the Helmet using law.
+
+• When completely automated no user input is required and therefore works with absolute efficiency and speed.
+
+• It can work around the clock and therefore becomes more cost efficient.
+
+# Application
+
+• Detects a person’s head and then checks whether Helmet is worn or not in each image frame or viewfinder using a camera module.
+
+• Can be used anywhere where traffic lights are installed as their people usually stop on red lights and Helmet detection becomes even more accurate.
+
+• Can be used as a reference for other ai models based on Helmet Detection.
+
+# Future Scope
+
+• As we know technology is marching towards automation, so this project is one of the step towards automation.
+
+• Thus, for more accurate results it needs to be trained for more images, and for a greater number of epochs.
+
+• Helmet detection will become a necessity in the future due to rise in population and hence our model will be of great help to tackle the situation in an efficient way.
+
+# Conclusion
+
+• In this project our model is trying to detect a person’s head and then showing it on viewfinder, live as to whether Helmet is worn or not as we have specified in Roboflow.
+
+• The model tries to solve the problem of severe head injuries that occur due to accidents and thus protects a person’s life.
+
+• The model is efficient and highly accurate and hence reduces the workforce required.
+
+# Reference
+
+1] Roboflow:- https://roboflow.com/
+
+2] Datasets or images used :- https://www.gettyimages.ae/search/2/image?phrase=helmet
+
+3] Google images
+
+# Articles :-
+
+1] https://www.bajajallianz.com/blog/motor-insurance-articles/what-is-the-importance-of-wearing-a-helmet-while-riding-your-two-wheeler.html#:~:text=Helmet%20is%20effective%20in%20reducing,are%20not%20wearing%20a%20helmet.
+
+2] https://www.findlaw.com/injury/car-accidents/helmet-laws-and-motorcycle-accident-cases.html
 
 
       
