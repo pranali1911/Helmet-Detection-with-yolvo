@@ -136,7 +136,7 @@ This Module is divided into two parts:
       sudo apt-get remove --purge thunderbird*
       
       
-   # Create Swap      
+Create Swap      
       
       
       udo fallocate -l 10.0G /swapfile1
@@ -147,4 +147,70 @@ This Module is divided into two parts:
       /swapfile1	swap	swap	defaults	0 0
    
 
-   # Cuda env in bashrc
+Cuda env in bashrc
+
+
+      vim ~/.bashrc
+
+      # add this lines
+      export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+      export LD_LIBRARY_PATh=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+      export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+      
+      
+Update & Upgrade
+
+
+    sudo apt-get update
+    sudo apt-get upgrade      
+
+Install some required Packages
+
+
+      sudo apt install curl
+      curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+      sudo python3 get-pip.py
+      sudo apt-get install libopenblas-base libopenmpi-dev
+      
+      
+Install Torch
+
+
+      curl -LO https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
+      mv p57jwntv436lfrd78inwl7iml6p13fzh.whl torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+      sudo pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+
+      #Check Torch, output should be "True" 
+      sudo python3 -c "import torch; print(torch.cuda.is_available())"
+      
+Install Torchvision
+
+
+     git clone --branch v0.9.1 https://github.com/pytorch/vision torchvision
+     cd torchvision/
+     sudo python3 setup.py install 
+     
+     
+clone Yolvo5
+
+
+     git clone https://github.com/ultralytics/yolov5.git
+     cd yolov5/
+     sudo pip3 install numpy==1.19.4
+
+     #comment torch,PyYAML and torchvision in requirement.txt
+
+     sudo pip3 install --ignore-installed PyYAML>=5.3.1
+     sudo pip3 install -r requirements.txt
+     
+     
+Download weights and Test Yolov5 Installation on USB webcam
+
+ 
+      sudo python3 detect.py
+      sudo python3 detect.py --weights yolov5s.pt  --source 0
+      
+      
+     
+      
+      
